@@ -1,1 +1,26 @@
+SELECT rating FROM film GROUP BY rating;
+SELECT replacement_cost,COUNT(*) FROM film GROUP BY replacement_cost HAVING COUNT(*) > 50;
+SELECT store_id, COUNT(*) FROM customer GROUP BY store_id;
+SELECT country_id, COUNT(*) FROM city GROUP BY country_id ORDER BY COUNT(*) DESC LIMIT 1;
 
+TURKISH:
+
+--Merhabalar,
+
+--Aşağıdaki sorgu senaryolarını dvdrental örnek veri tabanı üzerinden gerçekleştiriniz.
+
+--1.film tablosunda bulunan filmleri rating değerlerine göre gruplayınız.
+--2.film tablosunda bulunan filmleri replacement_cost sütununa göre grupladığımızda film sayısı 50 den fazla olan replacement_cost değerini ve karşılık gelen film sayısını sıralayınız.
+--3.customer tablosunda bulunan store_id değerlerine karşılık gelen müşteri sayılarını nelerdir? 
+--4.city tablosunda bulunan şehir verilerini country_id sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.
+
+ENGLISH:
+
+--Hello,
+
+--Code the given query scenarios by using the example database dvdrental.
+
+--Group the films at film data table according to their rating values.
+--Concatenate the replacement_cost value and corresponding number of films that occurs more than 50 when we group the film data table by replacement_cost column's values
+--What are the corresponding customer numbers of each distinct store_id at the customer data table ?
+--Share the country id value that has the maximum number of city and that number after grouping by country id column that resides at city data table.
